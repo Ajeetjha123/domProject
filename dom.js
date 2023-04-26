@@ -13,3 +13,12 @@ var liclass = document.getElementsByClassName('list-group-numbered')[0];
     liclass.textContent = 'Hello';
 var liTag = document.getElementsByTagName('li')[3];
     liTag.textContent = 'Goodbye';
+items[1].style.backgroundColor = 'green';
+    items[2].style.display = 'none';
+
+    var secondItem = document.querySelectorAll('li:nth-child(2)');
+        secondItem[0].style.color = 'green';
+    var odditems = document.querySelectorAll('li:nth-child(odd)');
+       for(var i = 0; i < odditems.length; i++){
+        odditems[i].style.backgroundColor = 'green';
+       }
