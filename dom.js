@@ -22,3 +22,13 @@ items[1].style.backgroundColor = 'green';
        for(var i = 0; i < odditems.length; i++){
         odditems[i].style.backgroundColor = 'green';
        }
+const headerTitle = document.querySelector('#header-title');
+const helloWorld = document.createElement('span');
+helloWorld.textContent = 'Hello world ';
+headerTitle.insertBefore(helloWorld, headerTitle.firstChild);
+
+var itemsList = document.getElementById('items');
+var firstItem = itemsList.firstElementChild;
+var helloText = document.createTextNode('Hello ');
+firstItem.insertBefore(helloText, firstItem.firstChild);
+
