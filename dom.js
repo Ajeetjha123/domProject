@@ -9,3 +9,7 @@ var items = document.getElementsByClassName('list-group-item');
     for(let i = 0; i < items.length; i++){
       items[i].style.fontWeight = 'bold';
     }
+var liclass = document.getElementsByClassName('list-group-numbered')[0];
+    liclass.textContent = 'Hello';
+var liTag = document.getElementsByTagName('li')[3];
+    liTag.textContent = 'Goodbye';
